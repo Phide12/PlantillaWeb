@@ -1,0 +1,10 @@
+@import url("fuentes.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'open_sans';
+}
