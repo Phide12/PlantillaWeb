@@ -8,3 +8,23 @@
 body {
   font-family: 'open_sans';
 }
+
+header#cabecera, footer {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+nav *{
+  display: block;
+}
+
+@media screen and (max-width: 501px) {
+
+}
