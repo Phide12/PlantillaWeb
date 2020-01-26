@@ -20,11 +20,8 @@ a {
 }
 
 
-
-nav *{
-  display: block;
-}
-
-@media screen and (max-width: 501px) {
-
+@media screen and (max-width: 700px) {
+  #contenedor_menus {
+    display: none;
+  }
 }
