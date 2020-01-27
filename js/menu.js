@@ -16,10 +16,12 @@ function cargarEventos() {
 
 function desplegarMenu() {
   let contenedorMenu = document.getElementById('contenedor_menus');
+  let cabecera = document.getElementById('cabecera');
+
   if (menuVisible) {
     contenedorMenu.style.display = 'none';
   } else {
-    contenedorMenu.style.display = 'block';
+    contenedorMenu.style.display = 'table-row';
   }
   menuVisible = !menuVisible;
 }
