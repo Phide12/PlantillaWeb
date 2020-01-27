@@ -17,8 +17,6 @@ function cargarEventos() {
 //funcion que cambia la visibilidad del elemento que contiene las secciones
 function desplegarMenu() {
   let contenedorMenu = document.getElementById('contenedor_menus');
-  let cabecera = document.getElementById('cabecera');
-
   if (menuVisible) {
     contenedorMenu.style.display = 'none';
   } else {

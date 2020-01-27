@@ -26,11 +26,8 @@ a {
 
 header#cabecera {
   position: sticky;
-  top: 0;
   display: table;
   width: 100%;
-  height: auto;
-  overflow: auto;
 }
 
 header#cabecera + * {
@@ -55,10 +52,16 @@ header h1{
   padding: 12px;
 }
 
+footer{
+  text-align: center;
+  padding: 1.5em;
+  line-height: 1.6em;
+}
 @media screen and (max-width: 700px) {
 
-  #contenedor_menus {
+  header nav#contenedor_menus {
     display: none;
+    text-align: center;
   }
 
   header #icono_menu {
@@ -66,11 +69,7 @@ header h1{
     z-index: 60;
     height: 20px;
     padding: 22px;
-  }
-
-  header nav#contenedor_menus{
-    text-align: center;
-  }
+  } 
 
   header nav#contenedor_menus div{  
     padding: 0.5em;
@@ -96,5 +95,9 @@ header h1{
     height: 20px;
     padding: 22px;
   }
-  
+
+  footer {
+    column-count: 2;
+    column-rule: 1px solid white;
+  }  
 }
