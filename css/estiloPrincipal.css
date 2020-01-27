@@ -19,14 +19,25 @@ a {
   color: inherit;
 }
 
-header {
+.seccion_actual {
+  background-color: #4f92ff;
+  color: white;
+}
+
+header#cabecera {
+  position: sticky;
+  top: 0;
   display: table;
   width: 100%;
   height: auto;
   overflow: auto;
 }
 
-header *{
+header#cabecera + * {
+  margin-top: 64px;
+}
+
+header * {
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -50,7 +61,7 @@ header h1{
     display: none;
   }
 
-  header #icono_menu{
+  header #icono_menu {
     float: right;
     z-index: 60;
     height: 20px;
