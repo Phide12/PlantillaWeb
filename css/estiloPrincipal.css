@@ -9,34 +9,14 @@ body {
   font-family: 'open_sans';
 }
 
-header#cabecera, footer {
-  background-color: black;
-  color: white;
+b{
+  font-size: 1.2em;
 }
+
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-div.seccion_actual, header nav#contenedor_menus div:hover {
-  background-color: #2570d4;
-  color: white;
-}
-
-header#cabecera {
-  position: sticky;
-  top: 0;
-  display: table;
-  width: 100%;
-  border-bottom: 1px solid white;
-}
-
-header#cabecera * {
-  user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
 }
 
 div.contenedor_parrafo1 {
@@ -51,48 +31,10 @@ div.contenedor_parrafo1 div{
   padding: 0.5em 1em;
 }
 
-header h1, header #icono_menu{
-  float: left;
-  width: auto;
-  display: block;
-}
-
-header h1{
-  height: 40px;
-  padding: 12px;
-  padding-right: 0px;
-}
-
-footer{
-  text-align: center;
-  padding: 1.5em;
-  line-height: 1.6em;
-}
-
-@media screen and (max-width: 751px) {
-
-  header nav#contenedor_menus {
-    display: none;
-    text-align: center;
-  }
-
-  header #icono_menu {
-    float: right;
-    height: 20px;
-    padding: 22px;
-    padding-left: 0px;
-  } 
-
-  header nav#contenedor_menus div{  
-    padding: 0.5em;
-    background-color: white;
-    color: black;
-    border-bottom: solid 1px black;
-  }
-
+@media screen and (max-width: 749px) {
   div.contenedor_parrafo1 {
     padding: 3em 10%;
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
 
   div.contenedor_parrafo1 div span{
@@ -101,40 +43,19 @@ footer{
 }
 
 @media screen and (max-width: 550px) {
-  header h1{
-    font-size: 1.6em;
-  }
   div.contenedor_parrafo1 {
-    padding: 1.75em 2.5%;
-    font-size: 1.5em;
+    padding: 1.9em 2.5%;
+    font-size: 2.7em;
   }
+
 }
 
 @media screen and (min-width: 750px) {
-
-  div#icono_menu {
-    display: none;
-  }
   
-  header nav#contenedor_menus{
-    float: right;
-  }
-  
-  header nav#contenedor_menus div {
-    float: left;
-    height: 20px;
-    padding: 22px;
-  }
-
   div.contenedor_parrafo1 {
     padding: 2em 7.5%;
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
-
-  footer {
-    column-count: 2;
-    column-rule: 1px solid white;
-  }  
 }
 
 @media screen and (min-width: 950px) {

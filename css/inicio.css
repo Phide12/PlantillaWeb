@@ -1,8 +1,8 @@
-#espaciado_superior {
+.espaciado_superior {
     background-color: #d81e5b;
     font-family: 'roboto';
 }
-#espaciado_superior div {
+.espaciado_superior div {
     height: 120px;
     width: 100%;
     text-align: center;
@@ -15,8 +15,8 @@ span#espacio_titulo_inferior {
     color: #ffe8b7;
 }
 
-@media screen and (max-width: 751px) {
-    #espaciado_superior {
+@media screen and (max-width: 749px) {
+    .espaciado_superior {
         display: none;
     }
 }

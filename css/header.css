@@ -1,0 +1,77 @@
+header#cabecera {
+  position: sticky;
+  top: 0;
+  display: table;
+  width: 100%;
+
+	user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  background-color: black;
+	color: white;
+	border-bottom: 1px solid grey;
+}
+
+header h1{
+  height: 40px;
+  padding: 12px;
+  padding-right: 0px;
+}
+
+header h1, header #icono_menu{
+  float: left;
+  width: auto;
+  display: block;
+}
+
+@media screen and (max-width: 550px) {
+  header h1{
+    font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 749px) {
+
+	header #icono_menu {
+    float: right;
+    height: 20px;
+    padding: 22px;
+    padding-left: 0px;
+  } 
+
+  header nav#contenedor_menus {
+    display: none;
+    text-align: center;
+  }
+
+  header nav#contenedor_menus div{  
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+    border-bottom: solid 1px black;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	
+	div#icono_menu {
+		display: none;
+	}
+
+	header nav#contenedor_menus{
+    float: right;
+	}
+	
+	header nav#contenedor_menus div {
+    float: left;
+    height: 20px;
+    padding: 22px;
+	}
+
+	nav#contenedor_menus div.seccion_actual, nav#contenedor_menus div:hover {
+		background-color: #2570d4;
+		color: white;
+	}
+}

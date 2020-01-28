@@ -7,7 +7,7 @@ var contadorLetrasSuperior = 0;
 var contadorLetrasInferior = 0;
 var contadorPalabras = 0;
 //lista de palabras que se muestran en el inicio
-var palabrasDisponibles = ['Java_Script_'.split(''), 'HTML_'.split(''), 'CSS_'.split(''), 'Builders_'.split('')]
+var palabrasDisponibles = ['Java_Script   '.split(''), 'HTML   '.split(''), 'CSS   '.split(''), 'Builders   '.split('')]
 
 //funcion para añadir eventos y que no peten en IE
 function addListener(element, type, callback) {
@@ -47,8 +47,7 @@ function redimensionar() {
     if (contenedorMenu.style.display == 'none') {
       contenedorMenu.style.display = 'table-row';
     }
-  } else if (window.matchMedia("(max-width: 751px)").matches){
-    console.log('hhh');
+  } else if (window.matchMedia("(max-width: 749px)").matches){
     if (contenedorMenu.style.display == 'table-row') {
       contenedorMenu.style.display = 'none';
     }
