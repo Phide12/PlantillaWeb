@@ -19,7 +19,7 @@ a {
   color: inherit;
 }
 
-div.seccion_actual {
+div.seccion_actual, header nav#contenedor_menus div:hover {
   background-color: #2570d4;
   color: white;
 }
@@ -124,10 +124,6 @@ footer{
     display: block;
     height: 20px;
     padding: 22px;
-  }
-
-  header nav#contenedor_menus div:hover {
-    background-color: #4292fa;
   }
 
   div.contenedor_parrafo1 {
