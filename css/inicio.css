@@ -15,7 +15,7 @@ span#espacio_titulo_inferior {
     color: #ffe8b7;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 751px) {
     #espaciado_superior {
         display: none;
     }

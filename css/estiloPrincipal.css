@@ -29,22 +29,23 @@ header#cabecera {
   top: 0;
   display: table;
   width: 100%;
+  border-bottom: 1px solid white;
 }
 
-header * {
+header#cabecera * {
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
 }
 
-.contenedor_parrafo1 {
+div.contenedor_parrafo1 {
   background: url('../imagenes/fondoImagen2.png') #ffe8b7;
   background-size: cover;
   padding: 3em 33%;
 }
 
-.contenedor_parrafo1 div{
+div.contenedor_parrafo1 div{
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 0.5em 1em;
@@ -68,7 +69,7 @@ footer{
   line-height: 1.6em;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 751px) {
 
   header nav#contenedor_menus {
     display: none;
@@ -121,7 +122,6 @@ footer{
   
   header nav#contenedor_menus div {
     float: left;
-    display: block;
     height: 20px;
     padding: 22px;
   }
@@ -145,6 +145,6 @@ footer{
 
 @media screen and (min-width: 1150px) {
   div.contenedor_parrafo1 {
-    padding: 3em 30%;
+    padding: 3em 25%;
   }
 }

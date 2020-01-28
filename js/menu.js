@@ -9,6 +9,7 @@ var contadorPalabras = 0;
 //lista de palabras que se muestran en el inicio
 var palabrasDisponibles = ['Java_Script_'.split(''), 'HTML_'.split(''), 'CSS_'.split(''), 'Builders_'.split('')]
 
+//funcion para añadir eventos y que no peten en IE
 function addListener(element, type, callback) {
   if (element.addEventListener) {
     element.addEventListener(type, callback);
@@ -21,7 +22,7 @@ addListener(document, 'DOMContentLoaded', cargarEventos);
 
 function cargarEventos() {
   addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
-    
+  addListener(window, 'resize', redimensionar);
   intervaloAnimacionTitulo = setInterval(animarTituloIntermitente, 750);
   if (window.matchMedia("(min-width: 750px)").matches) {
     escribirTituloSuperior = setInterval(escribirTitulo, 250);
@@ -39,6 +40,21 @@ function desplegarMenu() {
   menuVisible = !menuVisible;
 }
 
+//funcion que gestiona la visibilidad del menu, al redimensionar desde pequeno a grande
+function redimensionar() {
+  let contenedorMenu = document.getElementById('contenedor_menus');
+  if (window.matchMedia("(min-width: 750px)").matches) {
+    if (contenedorMenu.style.display == 'none') {
+      contenedorMenu.style.display = 'table-row';
+    }
+  } else if (window.matchMedia("(max-width: 751px)").matches){
+    console.log('hhh');
+    if (contenedorMenu.style.display == 'table-row') {
+      contenedorMenu.style.display = 'none';
+    }
+  }
+}
+
 //funcion que hace aparecer el caracter '_' de forma intermitente
 function animarTituloIntermitente() {
   let caracterFinalTitulo = document.getElementById('animacion_titulo');
@@ -48,6 +64,8 @@ function animarTituloIntermitente() {
     caracterFinalTitulo.innerHTML = '';
   }
 }
+
+
 
 //funcion que escribe el titulo en la parte superior, en la pagina de inicio.
 function escribirTitulo() {
