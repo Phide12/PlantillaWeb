@@ -11,3 +11,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fuentes/Roboto-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fuentes/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
