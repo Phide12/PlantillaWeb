@@ -9,32 +9,35 @@ body {
   font-family: 'open_sans';
 }
 
-b{
-  font-size: 1.2em;
-}
-
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
+
 div.contenedor_parrafo1 {
   background: url('../imagenes/fondoImagen2.png') #ffe8b7;
   background-size: cover;
-  padding: 3em 33%;
+  color: white;
 }
-
 div.contenedor_parrafo1 div{
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5em 1em;
+}
+
+div.contenedor_parrafo2 {
+  padding: 3em 33%;
   color: white;
+}
+div.contenedor_parrafo2 div{
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5em 1em;
 }
 
 @media screen and (max-width: 749px) {
   div.contenedor_parrafo1 {
     padding: 3em 10%;
-    font-size: 2.5em;
+    font-size: 1.9em;
   }
 
   div.contenedor_parrafo1 div span{
@@ -45,7 +48,7 @@ div.contenedor_parrafo1 div{
 @media screen and (max-width: 550px) {
   div.contenedor_parrafo1 {
     padding: 1.9em 2.5%;
-    font-size: 2.7em;
+    font-size: 1.22em;
   }
 
 }
@@ -53,7 +56,7 @@ div.contenedor_parrafo1 div{
 @media screen and (min-width: 750px) {
   
   div.contenedor_parrafo1 {
-    padding: 2em 7.5%;
+    padding: 2em 12.5%;
     font-size: 2.3em;
   }
 }
@@ -61,11 +64,6 @@ div.contenedor_parrafo1 div{
 @media screen and (min-width: 950px) {
   div.contenedor_parrafo1 {
     padding: 3em 20%;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  div.contenedor_parrafo1 {
-    padding: 3em 25%;
+    font-size: 2.5em;
   }
 }
