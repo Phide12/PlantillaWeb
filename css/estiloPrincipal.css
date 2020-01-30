@@ -15,9 +15,19 @@ a {
 }
 
 
+.separador {
+  text-align: center; 
+  padding: 1em; 
+  margin-top: 2em; 
+  background-color: #f1f1f1;
+  border-bottom: 0.2em solid #d81e5b;
+  box-shadow: red 10px 10px 10px 10px;
+}
+
 div.contenedor_parrafo1 {
   background: url('../imagenes/fondoImagen2.png') #ffe8b7;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 div.contenedor_parrafo1 div{
@@ -26,12 +36,18 @@ div.contenedor_parrafo1 div{
 }
 
 div.contenedor_parrafo2 {
-  padding: 3em 33%;
-  color: white;
+  display: table;
+  width: 50%;
+  padding: 3em 25%;
 }
 div.contenedor_parrafo2 div{
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.5em 1em;
+  float: left;
+  width: 40%;
+  padding: 1em 5%;
+}
+div.contenedor_parrafo2 img{
+  float: left;
+  width: 50%;
 }
 
 @media screen and (max-width: 749px) {
