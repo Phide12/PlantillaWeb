@@ -3,15 +3,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 body {
   font-family: 'open_sans';
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 a.boton_enlace {
@@ -26,10 +22,13 @@ a.boton_enlace {
 
 .separador {
   text-align: center; 
-  background-color: #f9f9f9;
-  border-bottom: 0.2em solid #d81e5b;
   padding: 1em; 
   margin: 2.5em 0px;
+
+  background-color: #f9f9f9;
+  border-bottom: 0.2em solid #d81e5b;
+  
+  box-shadow: #afafaf 0px 2.5px 5px 0px;
 }
 
 div.contenedor_parrafo1 {
@@ -95,7 +94,6 @@ div.contenedor_parrafo2 img{
   .separador {
     position: sticky;
     top: 64px; 
-    box-shadow: #cfafaf 0px 2.5px 5px 0px;
   }
   
   div.contenedor_parrafo1 {

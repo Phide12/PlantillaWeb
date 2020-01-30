@@ -3,6 +3,7 @@ header#cabecera {
   top: 0;
   display: table;
   width: 100%;
+  z-index: 50;
 
 	user-select: none;
   -moz-user-select: none;
@@ -44,6 +45,7 @@ header h1, header #icono_menu{
   header nav#contenedor_menus {
     display: none;
     text-align: center;
+    color: black;
   }
 
   header nav#contenedor_menus div{  
@@ -62,16 +64,16 @@ header h1, header #icono_menu{
 
 	header nav#contenedor_menus{
     float: right;
-	}
+  }
 	
 	header nav#contenedor_menus div {
     float: left;
     height: 20px;
     padding: 22px;
+    color: white;
 	}
-
 	nav#contenedor_menus div.seccion_actual, nav#contenedor_menus div:hover{
 		background-color: #2570d4;
-		color: white;
-	}
+  }
+  
 }
