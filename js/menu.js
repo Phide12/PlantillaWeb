@@ -47,6 +47,9 @@ function redimensionar() {
     if (contenedorMenu.style.display == 'none') {
       contenedorMenu.style.display = 'table-row';
     }
+    if (escribirTituloSuperior == null) {
+      escribirTituloSuperior = setInterval(escribirTitulo, 250);
+    }
   } else if (window.matchMedia("(max-width: 749px)").matches){
     if (contenedorMenu.style.display == 'table-row') {
       contenedorMenu.style.display = 'none';

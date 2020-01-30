@@ -14,14 +14,21 @@ a {
   color: inherit;
 }
 
+a div.boton_enlace {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  width: fit-content;
+  border-radius: 0.2em;
+  background-color: #2570d4;
+  color: white;
+}
 
 .separador {
   text-align: center; 
-  padding: 1em; 
-  margin-top: 2em; 
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   border-bottom: 0.2em solid #d81e5b;
-  box-shadow: red 10px 10px 10px 10px;
+  padding: 1em; 
+  margin: 2.5em 0px;
 }
 
 div.contenedor_parrafo1 {
@@ -37,10 +44,9 @@ div.contenedor_parrafo1 div{
 
 div.contenedor_parrafo2 {
   display: table;
-  width: 50%;
-  padding: 3em 25%;
+  padding: 4em 15%;
 }
-div.contenedor_parrafo2 div{
+div.contenedor_parrafo2 > div{
   float: left;
   width: 40%;
   padding: 1em 5%;
@@ -51,6 +57,11 @@ div.contenedor_parrafo2 img{
 }
 
 @media screen and (max-width: 749px) {
+  .separador {
+    font-size: 1.2em;
+    margin: 0.5em 0px;
+  }
+
   div.contenedor_parrafo1 {
     padding: 3em 10%;
     font-size: 1.9em;
@@ -58,6 +69,11 @@ div.contenedor_parrafo2 img{
 
   div.contenedor_parrafo1 div span{
     display: none;
+  }
+
+  div.contenedor_parrafo2 > div, div.contenedor_parrafo2 img{
+    width: 95%; 
+    padding: 1em 2.5%;
   }
 }
 
@@ -67,9 +83,17 @@ div.contenedor_parrafo2 img{
     font-size: 1.22em;
   }
 
+  div.contenedor_parrafo2 {
+    padding: 2.5em 2.5%;
+  }
 }
 
 @media screen and (min-width: 750px) {
+  .separador {
+    position: sticky;
+    top: 64px; 
+    box-shadow: #cfafaf 0px 2.5px 5px 0px;
+  }
   
   div.contenedor_parrafo1 {
     padding: 2em 12.5%;

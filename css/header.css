@@ -70,7 +70,7 @@ header h1, header #icono_menu{
     padding: 22px;
 	}
 
-	nav#contenedor_menus div.seccion_actual, nav#contenedor_menus div:hover {
+	nav#contenedor_menus div.seccion_actual, nav#contenedor_menus div:hover{
 		background-color: #2570d4;
 		color: white;
 	}
