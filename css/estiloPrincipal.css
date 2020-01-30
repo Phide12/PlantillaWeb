@@ -14,7 +14,8 @@ a {
   color: inherit;
 }
 
-a div.boton_enlace {
+a.boton_enlace {
+  display: inline-block;
   margin-top: 0.5em;
   padding: 0.5em;
   width: fit-content;
@@ -44,17 +45,14 @@ div.contenedor_parrafo1 div{
 
 div.contenedor_parrafo2 {
   display: table;
-  padding: 4em 15%;
+  text-align: justify;
 }
-div.contenedor_parrafo2 > div{
-  float: left;
-  width: 40%;
-  padding: 1em 5%;
-}
+
 div.contenedor_parrafo2 img{
   float: left;
   width: 50%;
 }
+
 
 @media screen and (max-width: 749px) {
   .separador {
@@ -71,9 +69,13 @@ div.contenedor_parrafo2 img{
     display: none;
   }
 
+  div.contenedor_parrafo2 {
+    padding: 2.5em 5%;
+  }
+
   div.contenedor_parrafo2 > div, div.contenedor_parrafo2 img{
     width: 95%; 
-    padding: 1em 2.5%;
+    padding: 0px 2.5%;
   }
 }
 
@@ -84,9 +86,10 @@ div.contenedor_parrafo2 img{
   }
 
   div.contenedor_parrafo2 {
-    padding: 2.5em 2.5%;
+    padding: 2em 2.5%;
   }
 }
+
 
 @media screen and (min-width: 750px) {
   .separador {
@@ -99,11 +102,25 @@ div.contenedor_parrafo2 img{
     padding: 2em 12.5%;
     font-size: 2.3em;
   }
+
+  div.contenedor_parrafo2 {
+    padding: 3em 7.5%;
+  }
+
+  div.contenedor_parrafo2 > div{
+    float: left;
+    width: 48%;
+    padding: 0px 1%;
+  }
 }
 
 @media screen and (min-width: 950px) {
   div.contenedor_parrafo1 {
     padding: 3em 20%;
     font-size: 2.5em;
+  }
+
+  div.contenedor_parrafo2 {
+    padding: 4em 10%;
   }
 }
