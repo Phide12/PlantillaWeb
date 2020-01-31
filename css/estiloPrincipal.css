@@ -60,18 +60,12 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
 
   div.contenedor_parrafo2 {
     padding: 2.5em 5%;
-    width: 90%;
   }
 
   div.contenedor_parrafo2 > div{
     display: block;
     width: 90%; 
-    padding: 1em 5%;
-  }
-  div.contenedor_parrafo2 > img{
-    display: block;
-    width: 100%;
-    height: 100%;
+    padding: 1em 0;
   }
 }
 
@@ -79,16 +73,6 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
   div.contenedor_parrafo1 {
     padding: 1.9em 2.5%;
     font-size: 1.22em;
-  }
-
-  div.contenedor_parrafo2 {
-    padding: 2em 2.5%;
-    width: 95%;
-  }
-
-  div.contenedor_parrafo2 > div{
-    width: 95%; 
-    padding: 1em 2.5%;
   }
 }
 
@@ -106,7 +90,7 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
 
   div.contenedor_parrafo2 {
     padding: 3em 10%;
-    width: 80%;
+    width: 82%;
   }
 
   div.contenedor_parrafo2 > div{
@@ -123,6 +107,6 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
 
   div.contenedor_parrafo2 {
     padding: 4em 12.5%;
-    width: 75%;
+    width: 78%;
   }
 }

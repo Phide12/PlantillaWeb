@@ -46,6 +46,7 @@ header h1, header #icono_menu{
   header nav#contenedor_menus {
     text-align: center;
     color: black;
+    font-size: 1.1em;
   }
 
   header nav#contenedor_menus div{  
