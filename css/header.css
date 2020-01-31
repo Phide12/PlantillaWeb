@@ -34,7 +34,6 @@ header h1, header #icono_menu{
 }
 
 @media screen and (max-width: 749px) {
-
 	header #icono_menu {
     float: right;
     height: 20px;

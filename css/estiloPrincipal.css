@@ -4,40 +4,34 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-}
-
-body {
   font-family: 'open_sans';
-}
-
-a.boton_enlace {
-  display: inline-block;
-  margin-top: 0.5em;
-  padding: 0.5em;
-  width: fit-content;
-  border-radius: 0.2em;
-  background-color: #2570d4;
-  color: white;
 }
 
 .separador {
   text-align: center; 
   padding: 1em; 
   margin: 2.5em 0px;
-
   background-color: #f9f9f9;
   border-bottom: 0.2em solid #d81e5b;
-  
   box-shadow: #afafaf 0px 2.5px 5px 0px;
+}
+
+a.boton_enlace {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  background-color: #2570d4;
+  color: white;
 }
 
 div.contenedor_parrafo1 {
   background: url('../imagenes/fondoImagen2.png') #ffe8b7;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
 }
 div.contenedor_parrafo1 div{
+  color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5em 1em;
 }
@@ -47,8 +41,9 @@ div.contenedor_parrafo2 {
   text-align: justify;
 }
 
-div.contenedor_parrafo2 img{
-  float: left;
+div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
+  display: table-cell;
+  vertical-align: middle;
   width: 50%;
 }
 
@@ -70,9 +65,11 @@ div.contenedor_parrafo2 img{
 
   div.contenedor_parrafo2 {
     padding: 2.5em 5%;
+    text-align: center;
+    width: 90%;
   }
 
-  div.contenedor_parrafo2 > div, div.contenedor_parrafo2 img{
+  div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img{
     width: 95%; 
     padding: 0px 2.5%;
   }
@@ -86,6 +83,7 @@ div.contenedor_parrafo2 img{
 
   div.contenedor_parrafo2 {
     padding: 2em 2.5%;
+    width: 95%;
   }
 }
 
@@ -102,13 +100,15 @@ div.contenedor_parrafo2 img{
   }
 
   div.contenedor_parrafo2 {
-    padding: 3em 7.5%;
+    padding: 3em 10%;
+    width: 80%;
   }
 
   div.contenedor_parrafo2 > div{
-    float: left;
-    width: 48%;
-    padding: 0px 1%;
+    line-height: 1.5em;
+  }
+
+  div.contenedor_parrafo2 > img{
   }
 }
 
@@ -119,6 +119,7 @@ div.contenedor_parrafo2 img{
   }
 
   div.contenedor_parrafo2 {
-    padding: 4em 10%;
+    padding: 4em 12.5%;
+    width: 75%;
   }
 }
