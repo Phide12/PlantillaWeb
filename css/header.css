@@ -12,19 +12,17 @@ header#cabecera {
 
   background-color: black;
 	color: white;
-	border-bottom: 1px solid grey;
 }
 
 header h1{
   height: 40px;
   padding: 12px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 header h1, header #icono_menu{
   float: left;
   width: auto;
-  display: block;
 }
 
 @media screen and (max-width: 550px) {
@@ -34,15 +32,18 @@ header h1, header #icono_menu{
 }
 
 @media screen and (max-width: 749px) {
+  .ocultar_movil {
+		display: none;
+  }
+
 	header #icono_menu {
     float: right;
     height: 20px;
     padding: 22px;
-    padding-left: 0px;
+    padding-left: 0;
   } 
 
   header nav#contenedor_menus {
-    display: none;
     text-align: center;
     color: black;
   }
@@ -56,11 +57,10 @@ header h1, header #icono_menu{
 }
 
 @media screen and (min-width: 750px) {
-	
-	div#icono_menu {
+  .ocultar_pantalla_grande {
 		display: none;
-	}
-
+  }
+  
 	header nav#contenedor_menus{
     float: right;
   }
