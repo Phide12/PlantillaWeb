@@ -4,7 +4,11 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  
+}
+body{
   font-family: 'open_sans';
+  overflow-x: hidden;
 }
 
 .separador {
@@ -36,14 +40,14 @@ div.contenedor_parrafo1 div{
   padding: 0.5em 1em;
 }
 
-div.contenedor_parrafo2 {
-  display: table;
-  text-align: justify;
+div.contenedor_parrafo2 > h2 {
+  text-align: center;
 }
 
-div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
-  display: table-cell;
-  vertical-align: middle;
+div.contenedor_parrafo2 > div.contenido_parrafo2 {
+  display: table;
+  text-align: justify;
+  width: 100%;
 }
 
 
@@ -64,7 +68,7 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
 
   div.contenedor_parrafo2 > div{
     display: block;
-    width: 90%; 
+    width: 100%; 
     padding: 1em 0;
   }
 }
@@ -90,12 +94,18 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
 
   div.contenedor_parrafo2 {
     padding: 3em 10%;
-    width: 82%;
+    width: 80%;
   }
 
   div.contenedor_parrafo2 > div{
-    line-height: 1.5em;
-    padding: 1em 2em;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3em;
+    padding: 0em 2em;
+    width: 60%;
+  }
+  div.contenedor_parrafo2 > img{
+    width: 100%;
   }
 }
 
@@ -105,8 +115,10 @@ div.contenedor_parrafo2 > div, div.contenedor_parrafo2 > img {
     font-size: 2.5em;
   }
 
-  div.contenedor_parrafo2 {
-    padding: 4em 12.5%;
-    width: 78%;
+  div.contenedor_parrafo2 > div{
+    width: 60%;
+  }
+  div.contenedor_parrafo2 > img{
+    width: 100%;
   }
 }
