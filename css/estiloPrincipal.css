@@ -11,8 +11,11 @@ body{
   overflow-x: hidden;
 }
 
+h2 {
+  text-align: center;
+}
+
 .separador {
-  text-align: center; 
   padding: 1em; 
   margin: 2.5em 0;
   background-color: #f9f9f9;
@@ -23,7 +26,7 @@ body{
 a.boton_enlace {
   display: inline-block;
   margin-top: 0.5em;
-  padding: 0.5em;
+  padding: 0.4em;
   border-radius: 0.2em;
   background-color: #2570d4;
   color: white;
@@ -39,15 +42,18 @@ div.contenedor_parrafo1 div{
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5em 1em;
 }
-
-div.contenedor_parrafo2 > h2 {
-  text-align: center;
+div.contenedor_parrafo1 h2{
+  text-align: left;
 }
 
-div.contenedor_parrafo2 > div.contenido_parrafo2 {
+div.contenido_parrafo2 {
   display: table;
   text-align: justify;
   width: 100%;
+}
+div.contenido_parrafo2 > * {
+  display: table-cell;
+  width: 50%;
 }
 
 
@@ -63,13 +69,21 @@ div.contenedor_parrafo2 > div.contenido_parrafo2 {
   }
 
   div.contenedor_parrafo2 {
-    padding: 2.5em 5%;
+    padding: 5%;
   }
 
-  div.contenedor_parrafo2 > div{
+  div.contenido_parrafo2{
     display: block;
-    width: 100%; 
-    padding: 1em 0;
+    width: 95%; 
+    padding: 2.5%;
+  }
+
+  div.contenido_parrafo2 > div{
+    padding-bottom: 1em;
+  }
+
+  div.contenido_parrafo2 > img{
+    width: 100%;
   }
 }
 
@@ -92,19 +106,18 @@ div.contenedor_parrafo2 > div.contenido_parrafo2 {
     font-size: 2.3em;
   }
 
-  div.contenedor_parrafo2 {
-    padding: 3em 10%;
-    width: 80%;
+  div.contenido_parrafo2 {
+    padding: 3em 5%;
+    width: 90%;
   }
 
-  div.contenedor_parrafo2 > div{
-    display: table-cell;
+  div.contenido_parrafo2 > div{
     vertical-align: middle;
     line-height: 1.3em;
     padding: 0em 2em;
-    width: 60%;
+    width: 50%;
   }
-  div.contenedor_parrafo2 > img{
+  div.contenido_parrafo2 > img{
     width: 100%;
   }
 }
@@ -115,10 +128,8 @@ div.contenedor_parrafo2 > div.contenido_parrafo2 {
     font-size: 2.5em;
   }
 
-  div.contenedor_parrafo2 > div{
-    width: 60%;
-  }
-  div.contenedor_parrafo2 > img{
-    width: 100%;
+  div.contenido_parrafo2 {
+    padding: 3em 10%;
+    width: 80%;
   }
 }
