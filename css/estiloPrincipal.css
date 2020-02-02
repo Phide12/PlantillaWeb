@@ -46,6 +46,14 @@ div.contenedor_parrafo1 h2{
   text-align: left;
 }
 
+div.contenedor_parrafo2 {
+  padding: 2em 0;
+}
+
+div.contenedor_parrafo2 > h2{
+  padding: 1em;
+}
+
 div.contenido_parrafo2 {
   display: table;
   text-align: justify;
@@ -56,20 +64,34 @@ div.contenido_parrafo2 > * {
   width: 50%;
 }
 
+div.contenido_parrafo2 img {
+  width: 100%;
+}
+
+div#contenedor_carousel {
+  width: 80%; 
+  height: 220px;
+  margin: 0 10%;
+  overflow: visible;
+  max-width: 1000px;
+  position: relative;
+}
+div#contenedor_carousel > img {
+  float: left;
+  margin: 10px;
+}
+
 
 @media screen and (max-width: 749px) {
   .separador {
     font-size: 1.2em;
     margin: 0.5em 0;
+    
   }
 
   div.contenedor_parrafo1 {
     padding: 3em 10%;
     font-size: 1.9em;
-  }
-
-  div.contenedor_parrafo2 {
-    padding: 5%;
   }
 
   div.contenido_parrafo2{
@@ -79,12 +101,14 @@ div.contenido_parrafo2 > * {
   }
 
   div.contenido_parrafo2 > div{
-    padding-bottom: 1em;
-  }
-
-  div.contenido_parrafo2 > img{
+    display: block;
     width: 100%;
   }
+
+  div.contenido_parrafo2 > div.contenedor_texto {
+    padding: 1em;
+  }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -94,11 +118,11 @@ div.contenido_parrafo2 > * {
   }
 }
 
-
 @media screen and (min-width: 750px) {
   .separador {
     position: sticky;
     top: 64px; 
+    z-index: 40;
   }
   
   div.contenedor_parrafo1 {
@@ -107,18 +131,18 @@ div.contenido_parrafo2 > * {
   }
 
   div.contenido_parrafo2 {
-    padding: 3em 5%;
+    padding: 0 5%;
     width: 90%;
   }
 
-  div.contenido_parrafo2 > div{
+  div.contenido_parrafo2 > div {
+    width: 50%;
+  }
+
+  div.contenido_parrafo2 > div.contenedor_texto{
     vertical-align: middle;
     line-height: 1.3em;
     padding: 0em 2em;
-    width: 50%;
-  }
-  div.contenido_parrafo2 > img{
-    width: 100%;
   }
 }
 
@@ -129,7 +153,15 @@ div.contenido_parrafo2 > * {
   }
 
   div.contenido_parrafo2 {
-    padding: 3em 10%;
-    width: 80%;
+    padding: 0 12.5%;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+
+  div.contenido_parrafo2 {
+    padding: 0 20%;
+    width: 60%;
   }
 }
