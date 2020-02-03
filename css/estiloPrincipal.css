@@ -39,7 +39,7 @@ div.contenedor_parrafo1 {
 }
 div.contenedor_parrafo1 div{
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.64);
   padding: 0.5em 1em;
 }
 div.contenedor_parrafo1 h2{
@@ -67,20 +67,6 @@ div.contenido_parrafo2 > * {
 div.contenido_parrafo2 img {
   width: 100%;
 }
-
-div#contenedor_carousel {
-  width: 80%; 
-  height: 220px;
-  margin: 0 10%;
-  overflow: visible;
-  max-width: 1000px;
-  position: relative;
-}
-div#contenedor_carousel > img {
-  float: left;
-  margin: 10px;
-}
-
 
 @media screen and (max-width: 749px) {
   .separador {
