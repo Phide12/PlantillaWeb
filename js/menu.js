@@ -63,7 +63,6 @@ function moverPosicionCarousel(evento) {
     posNueva = evento.x - posClickInicial;
     document.getElementById('posicion_imagenes').style.left = posNueva + 'px';
   }
-
 }
 
 //funcion que cambia la visibilidad del elemento que contiene las secciones
