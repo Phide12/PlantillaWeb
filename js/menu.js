@@ -55,6 +55,20 @@ function comenzarArrastre(evento) {
 function cancelarArrastre() {
   if (arrastrarCarousel) {
     arrastrarCarousel = false;
+    
+
+    let posicionImagenes =  document.getElementById('posicion_imagenes')
+    let espacioMaximoCarousel = (posicionImagenes.offsetWidth - window.innerWidth) * -1;
+    console.log(espacioMaximoCarousel);
+    
+    //al pasar el limite del contenido, el carousel vuelve automaticamente a una posicion valida  
+    if (posNueva > 0) {
+      posicionImagenes.style.left = '0px';
+      posNueva = 0;
+    } else if (posNueva < espacioMaximoCarousel) {
+      posicionImagenes.style.left = espacioMaximoCarousel + 'px';
+      posNueva = espacioMaximoCarousel;
+    }
   }
 }
 //funcion que cambia la posicion de las imagenes al mover el mouse
