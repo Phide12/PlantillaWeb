@@ -54,4 +54,5 @@ div#contenedor_carousel > div {
 div#contenedor_carousel > div > * {
   float: left;
   padding: 0 10px;
+  pointer-events: none;
 }

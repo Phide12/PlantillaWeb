@@ -43,6 +43,7 @@ function cargarEventos() {
   if (window.matchMedia("(min-width: 750px)").matches) {
     escribirTituloSuperior = setInterval(escribirTitulo, 250);
   }
+
 }
 
 //funcion que inicia la accion de arrastrar
@@ -64,7 +65,6 @@ function moverPosicionCarousel(evento) {
   }
 
 }
-
 
 //funcion que cambia la visibilidad del elemento que contiene las secciones
 function desplegarMenu() {
