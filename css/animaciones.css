@@ -31,12 +31,14 @@
   text-align: center;
 }
 
+
 div#contenedor_carousel {
   padding: 1em 0;
+  margin: 2em 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
-  background-color: gray;
+  background-color: #ededed;;
 }
 
 div#contenedor_carousel * {
@@ -50,7 +52,7 @@ div#contenedor_carousel > div {
   position: relative;
   left: 0;
   flex: 0 0 auto;
-  transition: left 0.3s ease-out;
+  transition: left 0.44s ease-out;
 }
 
 div#contenedor_carousel > div > * {

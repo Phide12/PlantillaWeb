@@ -20,7 +20,7 @@ h2 {
   margin: 2.5em 0;
   background-color: #f9f9f9;
   border-bottom: 0.2em solid #d81e5b;
-  box-shadow:  0 5px 10px 0 black;
+  box-shadow:  0 5px 7.25px 0 #444444;
 }
 
 a.boton_enlace {
