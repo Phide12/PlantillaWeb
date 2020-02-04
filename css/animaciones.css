@@ -12,7 +12,7 @@
   width: 100%;
   opacity: 0;
   transition: 1s ease-out;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.46);
 }
 
 .contenedor_imagen:hover .overlay {
@@ -36,6 +36,7 @@ div#contenedor_carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
+  background-color: gray;
 }
 
 div#contenedor_carousel * {

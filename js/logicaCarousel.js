@@ -1,0 +1,46 @@
+//Carga los eventos necesarios para que el carousel funcione
+function cargarCarousel() {
+  arrastrarCarousel = false;
+  posClickInicial = 0;
+  posNueva = 0;
+
+  posicionImagenes = document.getElementById('posicion_imagenes');
+  addListener(document.getElementById('contenedor_carousel'), 'mousedown', comenzarArrastre);
+  addListener(document, 'mouseup', cancelarArrastre);
+  addListener(document.getElementById('contenedor_carousel'), 'mousemove', moverPosicionCarousel);
+}
+
+//Inicia la accion de arrastrar al hacer click dentro del carousel
+function comenzarArrastre(evento) {
+  arrastrarCarousel = true;
+  posClickInicial = evento.x - posNueva;
+}
+
+//Detiene la accion de arrastrar
+function cancelarArrastre() {
+  if (arrastrarCarousel) {
+    arrastrarCarousel = false;
+    regresarPosicionValida();
+  }
+}
+
+//Cambia la posicion de las imagenes al mover el mouse
+function moverPosicionCarousel(evento) {
+  if (arrastrarCarousel) {
+    posNueva = evento.x - posClickInicial;
+    posicionImagenes.style.left = posNueva + 'px';
+  }
+}
+
+//Controla que el carousel no pueda hacer scroll fuera del contenido
+function regresarPosicionValida() {
+  let posMaximaCarousel = (posicionImagenes.offsetWidth - window.innerWidth) * -1;
+    if (posNueva > 0) {
+      posicionImagenes.style.left = 0 + 'px';
+      posNueva = 0;
+    } else if (posNueva < posMaximaCarousel) {
+      posicionImagenes.style.left = posMaximaCarousel + 'px';
+      posNueva = posMaximaCarousel;
+    }
+}
+

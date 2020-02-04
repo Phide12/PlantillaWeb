@@ -20,7 +20,7 @@ h2 {
   margin: 2.5em 0;
   background-color: #f9f9f9;
   border-bottom: 0.2em solid #d81e5b;
-  box-shadow: #afafaf 0 0.16em 0.20em 0;
+  box-shadow:  0 5px 10px 0 black;
 }
 
 a.boton_enlace {
@@ -72,12 +72,16 @@ div.contenido_parrafo2 img {
   .separador {
     font-size: 1.2em;
     margin: 0.5em 0;
-    
+    border-width: 0.4em;
   }
 
   div.contenedor_parrafo1 {
     padding: 3em 10%;
     font-size: 1.9em;
+  }
+
+  div.contenedor_parrafo2{
+    border-bottom: solid 0.4em #ededed;
   }
 
   div.contenido_parrafo2{
@@ -86,15 +90,11 @@ div.contenido_parrafo2 img {
     padding: 2.5%;
   }
 
-  div.contenido_parrafo2 > div{
+  div.contenido_parrafo2 > div.contenedor_texto{
     display: block;
     width: 100%;
+    padding: 1em 0;
   }
-
-  div.contenido_parrafo2 > div.contenedor_texto {
-    padding: 1em;
-  }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -119,6 +119,7 @@ div.contenido_parrafo2 img {
   div.contenido_parrafo2 {
     padding: 0 5%;
     width: 90%;
+    font-size: 1.1em;
   }
 
   div.contenido_parrafo2 > div {
@@ -141,6 +142,7 @@ div.contenido_parrafo2 img {
   div.contenido_parrafo2 {
     padding: 0 12.5%;
     width: 75%;
+    font-size: 1.2em;
   }
 }
 
