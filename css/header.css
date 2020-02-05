@@ -15,16 +15,17 @@ header {
 
 header .titulo {
   float: left;
+  height: 45px;
   padding: 20px 0;
   padding-left: 1em;
 }
 
-header h1, header #animacion_titulo{
+header h1, header #animacion_titulo {
   font-size: 2em;
   display: inline-block;
 } 
 
-header #icono_menu, header nav#contenedor_menus{
+header #icono_menu, header nav#contenedor_menus {
   float: right;
 }
 
@@ -38,6 +39,7 @@ header #icono_menu, header nav#contenedor_menus{
   nav#contenedor_menus {
     text-align: center;
     width: 100%;
+    overflow-x: hiddenv;
   }
 
   .boton_header{ 
@@ -53,8 +55,10 @@ header #icono_menu, header nav#contenedor_menus{
   #icono_menu{
     color: white;
     float: left;
-    height: 25px;
-    padding: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 32px;
+    padding: 24px;
   }
 }
 

@@ -14,7 +14,7 @@ addListener(document, 'DOMContentLoaded', cargarScripts);
 
 function cargarScripts() {
   addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
-
+  addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
   intervaloAnimacionTitulo = setInterval(animarTituloIntermitente, 750);
   
   cargarCarousel();
@@ -62,4 +62,11 @@ function redimensionar() {
       escribirTituloSuperior = setInterval(escribirSiguienteLetra, 250);
     }
   } 
+}
+
+function volverArriba() {
+  window.scroll({
+    top: 0, 
+    behavior: 'smooth'
+  });
 }

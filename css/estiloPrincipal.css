@@ -69,6 +69,23 @@ div.contenido_parrafo2 img {
 }
 
 @media screen and (max-width: 749px) {
+  aside {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    color: white;
+    background-color: #2570d4;
+    border-radius: 7.25%;
+  
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+
+    padding: 0.8em;
+    text-align: center;
+  }
+  
   .separador {
     font-size: 1.2em;
     margin: 0.5em 0;
@@ -105,6 +122,10 @@ div.contenido_parrafo2 img {
 }
 
 @media screen and (min-width: 750px) {
+  aside {
+    display: none;
+  }
+
   .separador {
     position: sticky;
     top: 83px; 

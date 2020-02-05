@@ -38,7 +38,7 @@ div#contenedor_carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
-  background-color: #ededed;;
+  background-color: #ededed;
 }
 
 div#contenedor_carousel * {
@@ -48,15 +48,34 @@ div#contenedor_carousel * {
   -webkit-user-select: none;
 }
 
-div#contenedor_carousel > div {
+div#posicion_imagenes {
   position: relative;
   left: 0;
   flex: 0 0 auto;
   transition: left 0.44s ease-out;
 }
 
-div#contenedor_carousel > div > * {
+div#posicion_imagenes > * {
   float: left;
-  padding: 0 10px;
+  margin: 0 10px;
+  display: table-cell;
+  width: 200px;
+  height: 200px;
   pointer-events: none;
+  border-bottom: solid 4px #d81e5b;
+}
+
+div#posicion_imagenes > div > div {
+  padding: 30px 10px;
+  height: 140px;
+  width: 180px;
+  color: white;
+  background-color: #222222;
+  text-align: justify;
+}
+
+@media screen and (max-width: 749px) {
+  div#contenedor_carousel {
+    margin-top: 0;
+  }
 }

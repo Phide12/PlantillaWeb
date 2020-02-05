@@ -36,9 +36,11 @@ function moverPosicionCarousel(evento) {
 //Controla que el carousel no pueda hacer scroll fuera del contenido
 function regresarPosicionValida() {
   let posMaximaCarousel = (posicionImagenes.offsetWidth - window.innerWidth) * -1;
+    //caso de sobrepasar al arrastrar hacia la izquierda
     if (posNueva > 0) {
       posicionImagenes.style.left = 0 + 'px';
       posNueva = 0;
+    //cado se sobrepasar al arrastrar hacia la derecha
     } else if (posNueva < posMaximaCarousel) {
       posicionImagenes.style.left = posMaximaCarousel + 'px';
       posNueva = posMaximaCarousel;
