@@ -107,7 +107,7 @@ div.contenido_parrafo2 img {
 @media screen and (min-width: 750px) {
   .separador {
     position: sticky;
-    top: 64px; 
+    top: 83px; 
     z-index: 40;
   }
   
