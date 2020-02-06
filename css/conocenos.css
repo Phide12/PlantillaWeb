@@ -1,0 +1,86 @@
+#working_with_us {
+    padding: 3.75em 0;
+    background-image: url(https://farm8.staticflickr.com/7109/6860867388_cbf9efc8bc_k.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #f1f2f2;
+
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.wrap {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    max-width: 1140px;
+    position: relative; 
+}
+
+#working_with_us h2 {
+    font-size: 2.4em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#working_with_us ul li {
+list-style-type: none;
+display: inline-block;
+width: 20%;
+margin-right: 4%;
+margin-bottom: 2em;
+vertical-align: top;
+}
+
+#working_with_us .illustration {
+width: 135px;
+height: 135px;
+background: #ffffff;
+display: inline-block;
+border-radius: 67px;
+margin-bottom: 1em;
+}
+
+#working_with_us .bicycle {
+/*background: url(../img/icon_bicycle.png);*/
+}
+
+
+#intro {
+    padding: 2em 0;
+    margin: 0;
+    text-align: center;
+}
+
+#intro h1 span {
+    color: #2570d4;
+    display: block;
+    font-size: 0.5em;
+    letter-spacing: .05em;
+    line-height: 1em;
+    margin-bottom: .7em;
+}
+
+#intro h1 {
+    font-size: 46px;
+}
+
+@media screen and (max-width: 767px) {
+    #working_with_us ul li {
+        list-style-type: none;
+        display: inline-block;
+        width: 40%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    #working_with_us ul li {
+        width: 90%;
+        margin: 0;
+    }
+}

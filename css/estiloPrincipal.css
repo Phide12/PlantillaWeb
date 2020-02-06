@@ -94,7 +94,7 @@ div.contenido_parrafo2 img {
 
   div.contenedor_parrafo1 {
     padding: 3em 10%;
-    font-size: 1.9em;
+    font-size: 2em;
   }
 
   div.contenedor_parrafo2{
@@ -117,7 +117,7 @@ div.contenido_parrafo2 img {
 @media screen and (max-width: 550px) {
   div.contenedor_parrafo1 {
     padding: 1.9em 2.5%;
-    font-size: 1.22em;
+    font-size: 1.6em;
   }
 }
 

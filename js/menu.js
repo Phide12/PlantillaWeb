@@ -14,15 +14,14 @@ addListener(document, 'DOMContentLoaded', cargarScripts);
 
 function cargarScripts() {
   addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
-  addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
+  
   intervaloAnimacionTitulo = setInterval(animarTituloIntermitente, 750);
   
   cargarCarousel();
   cargarMensajePanelSuperior();
   addListener(window, 'resize', redimensionar);
+  addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
 }
-
-
 
 //funcion que cambia la visibilidad del elemento que contiene las secciones
 function desplegarMenu() {
@@ -38,7 +37,7 @@ function desplegarMenu() {
 //funcion que hace aparecer el caracter '_' de forma intermitente
 function animarTituloIntermitente() {
   let caracterFinalTitulo = document.getElementById('animacion_titulo');
-  if (caracterFinalTitulo.innerHTML == '') {
+  if (caracterFinalTitulo.innerHTML == '') { 
     caracterFinalTitulo.innerHTML = '_';
   } else if (caracterFinalTitulo.innerHTML == '_') {
     caracterFinalTitulo.innerHTML = '';
@@ -64,6 +63,7 @@ function redimensionar() {
   } 
 }
 
+//
 function volverArriba() {
   window.scroll({
     top: 0, 

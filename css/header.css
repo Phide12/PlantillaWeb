@@ -43,7 +43,7 @@ header #icono_menu, header nav#contenedor_menus {
   nav#contenedor_menus {
     text-align: center;
     width: 100%;
-    overflow-x: hiddenv;
+    overflow-x: hidden;
   }
 
   .boton_header{ 
