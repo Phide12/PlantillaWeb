@@ -28,7 +28,7 @@ function cancelarArrastre() {
 function moverPosicionCarousel(evento) {
   if (arrastrarCarousel) {
     posNueva = evento.x - posClickInicial;
-    inerciaMovimiento = posNueva * 0.25;//cantidad adicional a la posicion para simular inercia
+    inerciaMovimiento = posNueva * 0.33;//cantidad adicional a la posicion para simular inercia
     posicionImagenes.style.left = (posNueva + inerciaMovimiento) + 'px';
   }
 }

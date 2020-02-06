@@ -71,11 +71,22 @@ div#posicion_imagenes > div > div {
   width: 180px;
   color: white;
   background-color: #222222;
-  text-align: justify;
 }
 
 @media screen and (max-width: 749px) {
   div#contenedor_carousel {
     margin-top: 0;
+    padding: 4em 0;
+  }
+
+  div#posicion_imagenes > div > div {
+    font-size: 1.15em;
+  }
+}
+
+@media screen and (max-width: 549px) {
+
+  div#posicion_imagenes > div > div {
+    font-size: 1.3em;
   }
 }

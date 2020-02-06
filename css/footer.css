@@ -2,21 +2,21 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1.5em;
+    padding: 4em 2em;
 }
 
 @media screen and (max-width: 749px) {
     footer {
-        font-size: 1.5em;
+        padding: 1.5em 1em;
+        font-size: 1.3em;
     }  
-  
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 549px) {
     footer {
-        font-size: 1.1em;
+        padding: 1em;
+        font-size: 1.2em;
     }  
-  
 }
 
 @media screen and (min-width: 750px) {
