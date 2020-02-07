@@ -6,14 +6,6 @@ function cargarGeneral() {
   addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
   addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
   addListener(window, 'resize', redimensionar);
-  /* la parte anterior deberia de cargar de la siguiente manera, al no utilizarse estas funcionalidades 
-  en resoluciones mayores. Solo es para probar el diseño responsive.
-
-  if (window.matchMedia("(max-width: 749px)").matches) {
-    addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
-    addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
-  }
-  */
 }
 
 
@@ -55,7 +47,6 @@ function animarTituloIntermitente() {
 
 
 /**
- * SOLO PARA TESTEO DE DISEÑO RESPONSIVE.
  * gestiona al redimensionar, la situacion del menu dependiendo del tamaño de resolucion.
  */
 function redimensionar() {

@@ -18,9 +18,8 @@ h2 {
 .separador {
   padding: 1em; 
   margin: 2.5em 0;
-  background-color: #f9f9f9;
-  border-bottom: 0.2em solid #d81e5b;
-  box-shadow:  0 5px 7.25px 0 #444444;
+  background-color: #f1f1f1;
+  border-bottom: 0.4em solid #d81e5b;
 }
 
 a.boton_enlace {
@@ -89,7 +88,6 @@ div.contenido_parrafo2 img {
   .separador {
     font-size: 1.2em;
     margin: 0.5em 0;
-    border-width: 0.4em;
   }
 
   div.contenedor_parrafo1 {
@@ -122,9 +120,6 @@ div.contenido_parrafo2 img {
 }
 
 @media screen and (min-width: 750px) {
-  aside {
-    display: none;
-  }
 
   .separador {
     position: sticky;
