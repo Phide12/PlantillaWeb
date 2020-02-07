@@ -1,25 +1,28 @@
-var escribirTituloSuperior;
-
+/**
+ * Carga las funcionalidades necesarias para que funcione el panel de mensajes rotatorios.
+ */
 function cargarMensajePanelSuperior() {
   if (window.matchMedia("(min-width: 750px)").matches) {
-    escribirTituloSuperior = setInterval(escribirSiguienteLetra, 250);
+    //lista de palabras que se muestran
+    palabraSuperior = '#Code'.split('');
+    palabrasDisponibles = [
+      'Java_Script   '.split(''),
+      'HTML   '.split(''),
+      'CSS   '.split(''),
+      'Builders   '.split('')
+    ];
+
+    contadorLetrasSuperior = 0;
+    contadorLetrasInferior = 0;
+    contadorPalabras = 0;
+    setInterval(escribirSiguienteLetra, 250);
   }
 }
 
-//lista de palabras que se muestran
-var palabraSuperior = '#Code'.split('');
-var palabrasDisponibles = [
-  'Java_Script   '.split(''),
-  'HTML   '.split(''),
-  'CSS   '.split(''),
-  'Builders   '.split('')
-];
 
-var contadorLetrasSuperior = 0;
-var contadorLetrasInferior = 0;
-var contadorPalabras = 0;
-
-//funcion que escribe la siguiente letra del mensaje actual, lleva el control del turno de cada palabra.
+/**
+ * escribe la siguiente letra del mensaje actual, maneja el turno de los mensajes que se muestran.
+ */
 function escribirSiguienteLetra() {
   let palabraInferior = palabrasDisponibles[contadorPalabras];
   if (contadorLetrasSuperior < palabraSuperior.length) {
@@ -35,6 +38,11 @@ function escribirSiguienteLetra() {
   }
 }
 
+
+/**
+ * al escrbir las dos palabras enteras pasa a la siguiente, si llega al final resetea el contador 
+ * y comienza otra vez el ciclo.
+ */
 function resetearMensaje() {
   document.getElementById('espacio_titulo_superior').innerHTML = '';
   document.getElementById('espacio_titulo_inferior').innerHTML = '';
@@ -46,3 +54,5 @@ function resetearMensaje() {
     contadorPalabras = 0;
   }
 }
+
+addListener(document, 'DOMContentLoaded', cargarMensajePanelSuperior);

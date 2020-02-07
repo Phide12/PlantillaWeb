@@ -1,4 +1,6 @@
-//Carga los eventos necesarios para que el carousel funcione
+/**
+ * Carga las funcionalidades necesarias para que funcione el carousel.
+ */
 function cargarCarousel() {
   arrastrarCarousel = false;
   posClickInicial = 0;
@@ -10,13 +12,20 @@ function cargarCarousel() {
   addListener(document.getElementById('contenedor_carousel'), 'mousemove', moverPosicionCarousel);
 }
 
-//Inicia la accion de arrastrar al hacer click dentro del carousel
+
+/**
+ * Inicia la accion de arrastrar, solo al hacer click dentro del carousel.
+ */
+
 function comenzarArrastre(evento) {
   arrastrarCarousel = true;
   posClickInicial = evento.x - posNueva;
 }
 
-//Detiene la accion de arrastrar
+
+/**
+ * Detiene la accion de arrastrar, al levantar el click
+ */
 function cancelarArrastre() {
   if (arrastrarCarousel) {
     arrastrarCarousel = false;
@@ -24,7 +33,10 @@ function cancelarArrastre() {
   }
 }
 
-//Cambia la posicion de las imagenes al mover el mouse
+
+/**
+ * Cambia la posicion horizontal del contenedor que tiene elementos del carousel, al mover el mouse.
+ */
 function moverPosicionCarousel(evento) {
   if (arrastrarCarousel) {
     posNueva = evento.x - posClickInicial;
@@ -33,7 +45,10 @@ function moverPosicionCarousel(evento) {
   }
 }
 
-//Controla que el carousel no pueda hacer scroll fuera del contenido
+
+/**
+ * Controla que el carousel no pueda hacer scroll fuera del espacio delimitado
+ */
 function regresarPosicionValida() {
   let posMaximaCarousel = (posicionImagenes.offsetWidth - window.innerWidth) * -1;
     //caso de sobrepasar al arrastrar hacia la izquierda
@@ -46,4 +61,7 @@ function regresarPosicionValida() {
       posNueva = posMaximaCarousel;
     }
 }
+
+
+addListener(document, 'DOMContentLoaded', cargarCarousel);
 

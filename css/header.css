@@ -2,6 +2,7 @@ header {
   position: sticky;
   top: 0;
   overflow: auto;
+  width: 100%;
   z-index: 50;
 
 	user-select: none;
@@ -33,7 +34,12 @@ header #icono_menu, header nav#contenedor_menus {
 @media screen and (max-width: 749px) {
 
   header {
+    position: fixed;
     border-bottom: solid 6px #d81e5b;
+  }
+
+  header + *{
+    margin-top: 85px;
   }
 
   header .titulo {
@@ -63,6 +69,7 @@ header #icono_menu, header nav#contenedor_menus {
     font-weight: bold;
     height: 32px;
     padding: 24px;
+    padding-left: 0px;
   }
 }
 
