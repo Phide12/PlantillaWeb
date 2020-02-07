@@ -45,20 +45,12 @@ border-radius: 67px;
 margin-bottom: 1em;
 }
 
-#working_with_us .open_source {
-background: url(../imagenes/icono_open_source.png);
-}
-
-#working_with_us .sistema_op {
-    background: url(../imagenes/icono_sis_op.png);
-}
-
 #working_with_us .relleno {
-    background: url(../imagenes/icono_relleno.png);
+    background: url(../imagenes/iconos_conocenos/icono_relleno.png);
 }
 
 #working_with_us .idea {
-    background: url(../imagenes/icono_ideas.png);
+    background: url(../imagenes/iconos_conocenos/icono_ideas.png);
 }
 
 
@@ -79,6 +71,27 @@ background: url(../imagenes/icono_open_source.png);
 
 #intro h1 {
     font-size: 46px;
+}
+
+.wrapper_contenedor1 {
+    background: url('../imagenes/fondo_conocenos1.jpg');
+    background-size: cover;
+    padding: 5em 0;
+    margin: 1.5em 0;
+}
+
+.contenido_contenedor1 {
+    width: 60%;
+    text-align: left;
+    margin-left: 5%;
+    padding: 2.2em;
+    background-color: rgba(216, 30, 91, 0.75);
+    color: white;   
+    font-size: 1.4em;
+}
+
+.contenido_contenedor1 > * {
+    margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 767px) {
