@@ -73,3 +73,6 @@ div#posicion_imagenes > div > div {
   }
 
 }
+div#posicion_imagenes > img {
+  width: auto;
+}

@@ -45,8 +45,20 @@ border-radius: 67px;
 margin-bottom: 1em;
 }
 
-#working_with_us .bicycle {
+#working_with_us .open_source {
 background: url(../imagenes/icono_open_source.png);
+}
+
+#working_with_us .sistema_op {
+    background: url(../imagenes/icono_sis_op.png);
+}
+
+#working_with_us .relleno {
+    background: url(../imagenes/icono_relleno.png);
+}
+
+#working_with_us .idea {
+    background: url(../imagenes/icono_ideas.png);
 }
 
 
