@@ -25,6 +25,10 @@ div#posicion_imagenes > * {
   border-bottom: solid 4px #d81e5b;
 }
 
+div#posicion_imagenes > div {
+  display: table;
+}
+
 div#posicion_imagenes > div > div {
   padding: 30px 10px;
   color: white;

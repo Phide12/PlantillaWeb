@@ -19,7 +19,7 @@ function cargarCarousel() {
 
 function comenzarArrastre(evento) {
   arrastrarCarousel = true;
-  posClickInicial = evento.x - posNueva;
+  posClickInicial = evento.clientX - posNueva;
 }
 
 
@@ -39,7 +39,7 @@ function cancelarArrastre() {
  */
 function moverPosicionCarousel(evento) {
   if (arrastrarCarousel) {
-    posNueva = evento.x - posClickInicial;
+    posNueva = evento.clientX - posClickInicial;
     inerciaMovimiento = posNueva * 0.10;//cantidad adicional a la posicion para simular inercia
     posicionImagenes.style.left = (posNueva + inerciaMovimiento) + 'px';
   }
