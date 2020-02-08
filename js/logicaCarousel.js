@@ -30,14 +30,13 @@ function obtenerPosicionCarousel() {
 /**
  * Inicia la accion de arrastrar, solo al hacer click dentro del carousel.
  */
-
 function comenzarArrastre(evento) {
   arrastrarCarousel = true;
   posClickInicial = evento.clientX - obtenerPosicionCarousel();
 }
 
 /**
- * Detiene la accion de arrastrar, al levantar el click
+ * Detiene la accion de arrastrar, al soltar el click
  */
 function cancelarArrastre() {
   if (arrastrarCarousel) {
@@ -65,7 +64,6 @@ function moverPosicionCarousel(evento) {
  */
 function regresarPosicionValida() {
   let posMaximaCarousel = (posicionImagenes.offsetWidth - window.innerWidth) * -1;
-  console.log(posicionImagenes.clientWidth);
   let posicionActual = obtenerPosicionCarousel()
   if (posicionActual > 0) {
     posicionImagenes.style.left = 0 + 'px';
@@ -85,18 +83,18 @@ function regresarPosicionValida() {
  */
 function cargarDesplazamientoAutomatico() {
   intervaloDesplazamiento = 1640;
-  distanciaDesplazamiento = 300;
-
+  distanciaDesplazamiento = 400;
   desplazamientoDerecha = true;
   setInterval(desplazamientoAutomatico, intervaloDesplazamiento);
 }
 
 /**
- * mueve la poscion horizontal del carousel en la direccion que le toca
+ * mueve la posicion horizontal del carousel en la direccion que le toca
  */
 function desplazamientoAutomatico() {
   if (!arrastrarCarousel) {
     let posicionActual = obtenerPosicionCarousel();
+    
     let calcularPosicion;
 
     if (desplazamientoDerecha) {

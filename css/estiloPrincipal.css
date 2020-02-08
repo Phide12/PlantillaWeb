@@ -58,6 +58,17 @@ div.contenido_parrafo2 {
   text-align: justify;
   width: 100%;
 }
+
+@keyframes cargar_imagenes {
+  from {top: 200px; opacity: 0;}
+  to {top: 0px; opacity: 1;}
+}
+@-webkit-keyframes cargar_imagenes {
+  from {top: 200px; opacity: 0;}
+  to {top: 0px; opacity: 1;}
+}
+
+
 div.contenido_parrafo2 > * {
   display: table-cell;
   width: 50%;
@@ -65,6 +76,7 @@ div.contenido_parrafo2 > * {
 
 div.contenido_parrafo2 img {
   width: 100%;
+  
 }
 
 @media screen and (max-width: 749px) {
