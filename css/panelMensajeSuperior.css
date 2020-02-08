@@ -1,9 +1,9 @@
 @media screen and (min-width: 750px) {
-	.espaciado_superior {
+	.contenedor_panel_rotativo {
 		background-color: #d81e5b;
 		font-family: 'roboto';
 	}
-	.espaciado_superior div {
+	.contenedor_panel_rotativo div {
 		width: 100%;
 		height: 2em;
 		text-align: center;

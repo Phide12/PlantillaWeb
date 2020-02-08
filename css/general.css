@@ -1,0 +1,71 @@
+@import url("fuentes.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'open_sans';
+    overflow-x: hidden;
+}
+
+.cargar_imagenes {
+    animation-name: cargar_imagenes;
+    -webkit-animation-name: cargar_imagenes;
+    position: relative;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes cargar_imagenes {
+    from {
+        top: 200px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes cargar_imagenes {
+    from {
+        top: 200px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .ocultar_movil {
+        display: none;
+    }
+
+    aside {
+      position: fixed;
+      right: 1em;
+      bottom: 1em;
+      color: white;
+      background-color: #2570d4;
+      border-radius: 7.25%;
+    
+      user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+  
+      padding: 0.8em;
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .ocultar_grande {
+        display: none;
+    }
+}

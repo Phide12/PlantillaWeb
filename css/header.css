@@ -4,17 +4,15 @@ header {
   overflow: auto;
   width: 100%;
   z-index: 50;
-
-	user-select: none;
+  user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-
   background-color: black;
-	color: white;
+  color: white;
 }
 
-header .titulo {
+header .contenedor_titulo {
   float: left;
   height: 45px;
   padding: 20px 0;
@@ -24,35 +22,29 @@ header .titulo {
 header h1, header #animacion_titulo {
   font-size: 2em;
   display: inline-block;
-} 
+}
 
 header #icono_menu, header nav#contenedor_menus {
   float: right;
 }
 
-
 @media screen and (max-width: 749px) {
-
   header {
     position: fixed;
-    border-bottom: solid 6px #d81e5b;
+    border-bottom: solid 8px #d81e5b;
   }
-
-  header + *{
+  header+* {
     margin-top: 85px;
   }
-
-  header .titulo {
+  header .contenedor_titulo {
     font-size: 0.9em;
   }
-
   nav#contenedor_menus {
     text-align: center;
     width: 100%;
     overflow-x: hidden;
   }
-
-  .boton_header{ 
+  .boton_header {
     display: block;
     width: 100%;
     padding: 0.5em;
@@ -61,8 +53,7 @@ header #icono_menu, header nav#contenedor_menus {
     background-color: white;
     border-bottom: solid 1px black;
   }
-  
-  #icono_menu{
+  #icono_menu {
     color: white;
     float: left;
     font-size: 1.5em;
@@ -74,27 +65,22 @@ header #icono_menu, header nav#contenedor_menus {
 }
 
 @media screen and (min-width: 750px) {
-
   .boton_header {
     color: white;
     float: left;
     height: 25px;
     padding: 30px 20px;
   }
-
-	.seccion_actual, .boton_header:hover{
-		background-color: #2570d4;
+  .seccion_actual, .boton_header:hover {
+    background-color: #2570d4;
   }
 }
 
 @media screen and (min-width: 950px) {
-
-  header .titulo {
+  header .contenedor_titulo {
     font-size: 1.1em;
   }
-
   .boton_header {
     padding: 30px
   }
-
 }
