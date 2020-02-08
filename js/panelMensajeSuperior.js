@@ -15,7 +15,7 @@ function cargarMensajePanelSuperior() {
     contadorLetrasSuperior = 0;
     contadorLetrasInferior = 0;
     contadorPalabras = 0;
-    setInterval(escribirSiguienteLetra, 250);
+    setInterval(escribirSiguienteLetra, 175);
   }
 }
 
