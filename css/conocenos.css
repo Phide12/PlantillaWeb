@@ -1,3 +1,7 @@
+header {
+	border-bottom: solid 8px #d81e5b;
+}
+
 #intro {
 	padding: 2em 0;
 	margin: 0;
