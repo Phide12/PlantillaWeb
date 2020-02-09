@@ -17,6 +17,7 @@ body {
     position: relative;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes cargar_imagenes {
