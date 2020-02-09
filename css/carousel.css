@@ -53,6 +53,11 @@ div#posicion_imagenes > div > div {
     width: 180px;
     font-size: 1.3em;
   }
+
+  .ayuda_carousel {
+    color: #555555;
+    background-color: #ededed;
+  }
 }
 
 @media screen and (max-width: 549px) {

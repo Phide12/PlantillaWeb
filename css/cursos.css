@@ -1,0 +1,145 @@
+h2 {
+  text-align: center;
+}
+
+.separador {
+  padding: 1em; 
+  margin: 2.5em 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-bottom: 0.4em solid #d81e5b;
+}
+
+a.boton_enlace {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.4em;
+  border-radius: 0.2em;
+  background-color: #2570d4;
+  color: white;
+}
+
+div.contenedor_parrafo_1 {
+  background: url('../imagenes/cursos/fondoInicio1.png') #ffe8b7;
+  background-size: cover;
+  background-attachment: fixed;
+}
+div.contenedor_parrafo_1 div{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.64);
+  padding: 0.5em 1em;
+}
+div.contenedor_parrafo_1 h2{
+  text-align: left;
+}
+
+div.contenedor_parrafo_2 {
+  padding: 2em 0;
+}
+
+div.contenedor_parrafo_2 > h2{
+  padding: 1em;
+}
+
+div.contenido_parrafo_2 {
+  display: table;
+  text-align: justify;
+  width: 100%;
+}
+
+div.contenido_parrafo_2 > * {
+  display: table-cell;
+  width: 50%;
+}
+
+div.contenido_parrafo_2 img {
+  width: 100%;
+  
+}
+
+@media screen and (max-width: 749px) {
+  
+  .separador {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+
+  div.contenedor_parrafo_1 {
+    padding: 3em 10%;
+    font-size: 2em;
+  }
+
+  div.contenedor_parrafo_2{
+    border-bottom: solid 0.4em #ededed;
+  }
+
+  div.contenido_parrafo_2{
+    display: block;
+    width: 95%; 
+    padding: 2.5%;
+  }
+
+  div.contenido_parrafo_2 > div.contenedor_texto{
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  div.contenedor_parrafo_1 {
+    padding: 1.9em 2.5%;
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+
+  .separador {
+    position: sticky;
+    top: 83px; 
+    z-index: 40;
+  }
+  
+  div.contenedor_parrafo_1 {
+    padding: 2em 12.5%;
+    font-size: 2.3em;
+  }
+
+  div.contenido_parrafo_2 {
+    padding: 0 5%;
+    width: 90%;
+    font-size: 1.1em;
+  }
+
+  div.contenido_parrafo_2 > div {
+    width: 50%;
+  }
+
+  div.contenido_parrafo_2 > div.contenedor_texto{
+    vertical-align: middle;
+    line-height: 1.3em;
+    padding: 0em 2em;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  div.contenedor_parrafo_1 {
+    padding: 3em 20%;
+    font-size: 2.5em;
+  }
+
+  div.contenido_parrafo_2 {
+    padding: 0 12.5%;
+    width: 75%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+
+  div.contenido_parrafo_2 {
+    padding: 0 20%;
+    width: 60%;
+  }
+}

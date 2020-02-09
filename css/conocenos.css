@@ -73,7 +73,7 @@ header {
 
 @media screen and (min-width: 720px) {
 	.contenedor_parrafo_1 {
-		background: url('../imagenes/fondo_conocenos1.jpg');
+		background: url('../imagenes/conocenos/fondo_conocenos1.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		padding: 5em 0;

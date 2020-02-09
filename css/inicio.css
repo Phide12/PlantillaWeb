@@ -1,145 +1,103 @@
-h2 {
+body {
+  height: 1080px;
+  overflow-y: hidden;
+}
+
+.contenedor_general {
+  position: fixed;
+  top: 25%;
+  width: 100%;
   text-align: center;
 }
 
-.separador {
-  padding: 1em; 
-  margin: 2.5em 0;
-  text-align: center;
-  background-color: #f1f1f1;
-  border-bottom: 0.4em solid #d81e5b;
-}
-
-a.boton_enlace {
+.contenedor_secciones a {
+  color: white;
+  border: solid white 2px;
   display: inline-block;
-  margin-top: 0.5em;
-  padding: 0.4em;
-  border-radius: 0.2em;
-  background-color: #2570d4;
-  color: white;
-}
-
-div.contenedor_parrafo_1 {
-  background: url('../imagenes/fondoImagen2.png') #ffe8b7;
-  background-size: cover;
-  background-attachment: fixed;
-}
-div.contenedor_parrafo_1 div{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.64);
-  padding: 0.5em 1em;
-}
-div.contenedor_parrafo_1 h2{
-  text-align: left;
-}
-
-div.contenedor_parrafo_2 {
-  padding: 2em 0;
-}
-
-div.contenedor_parrafo_2 > h2{
+  width: 150px;
   padding: 1em;
+  margin: 0 2em;
+  border-radius: 7.25px;
 }
 
-div.contenido_parrafo_2 {
-  display: table;
-  text-align: justify;
-  width: 100%;
+.contenedor_panel_rotativo {
+  background-color: unset;
 }
 
-div.contenido_parrafo_2 > * {
-  display: table-cell;
-  width: 50%;
+body {
+  background: linear-gradient(-45deg, #d81e5b, #2570d4);
+  background-size: 200% 200%;
+  animation: 10s ease-in-out infinite;
+  animation-name: anim_fondo;
+  -webkit-animation-name: anim_fondo;
 }
 
-div.contenido_parrafo_2 img {
-  width: 100%;
-  
-}
-
-@media screen and (max-width: 749px) {
-  
-  .separador {
-    font-size: 1.2em;
-    margin: 0.5em 0;
+@keyframes anim_fondo {
+  0% {
+    background-position: 0% 50%;
   }
-
-  div.contenedor_parrafo_1 {
-    padding: 3em 10%;
-    font-size: 2em;
+  50% {
+    background-position: 100% 50%;
   }
-
-  div.contenedor_parrafo_2{
-    border-bottom: solid 0.4em #ededed;
-  }
-
-  div.contenido_parrafo_2{
-    display: block;
-    width: 95%; 
-    padding: 2.5%;
-  }
-
-  div.contenido_parrafo_2 > div.contenedor_texto{
-    display: block;
-    width: 100%;
-    padding: 1em 0;
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@media screen and (max-width: 550px) {
-  div.contenedor_parrafo_1 {
-    padding: 1.9em 2.5%;
-    font-size: 1.6em;
+.seccion_actual {
+  animation: 5s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+  animation-name: color_fondo;
+  -webkit-animation-name: color_fondo;
+}
+
+.contenedor_panel_rotativo #espacio_titulo_inferior {
+  animation: 5s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+  animation-name: color_letra;
+  -webkit-animation-name: color_letra;
+}
+
+.contenedor_panel_rotativo {
+  animation: 5s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+  animation-name: color_sombra;
+  -webkit-animation-name: color_sombra;
+}
+
+@keyframes color_fondo {
+  0% {
+    background-color: #2570d4;
+  }
+  50% {
+    background-color: #ffe8b7;
+    color: #333333;
+  }
+  100% {
+    background-color: #d81e5b;
   }
 }
 
-@media screen and (min-width: 750px) {
-
-  .separador {
-    position: sticky;
-    top: 83px; 
-    z-index: 40;
+@keyframes color_letra {
+  0% {
+    color: #2570d4;
   }
-  
-  div.contenedor_parrafo_1 {
-    padding: 2em 12.5%;
-    font-size: 2.3em;
+  50% {
+    color: #ffe8b7;
   }
-
-  div.contenido_parrafo_2 {
-    padding: 0 5%;
-    width: 90%;
-    font-size: 1.1em;
-  }
-
-  div.contenido_parrafo_2 > div {
-    width: 50%;
-  }
-
-  div.contenido_parrafo_2 > div.contenedor_texto{
-    vertical-align: middle;
-    line-height: 1.3em;
-    padding: 0em 2em;
+  100% {
+    color: #d81e5b;
   }
 }
 
-@media screen and (min-width: 950px) {
-  div.contenedor_parrafo_1 {
-    padding: 3em 20%;
-    font-size: 2.5em;
+@keyframes color_sombra {
+  0% {
+    text-shadow: -10px -5px 5px #d81e5b;
+    box-shadow: inset -10px -5px 5px #d81e5b, -10px -5px 5px #d81e5b;
   }
-
-  div.contenido_parrafo_2 {
-    padding: 0 12.5%;
-    width: 75%;
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (min-width: 1250px) {
-
-  div.contenido_parrafo_2 {
-    padding: 0 20%;
-    width: 60%;
+  100% {
+    
+    text-shadow: 10px 10px 5px #2570d4;
+    box-shadow: inset 10px 10px 5px #2570d4, 10px 10px 5px #2570d4;
   }
 }
