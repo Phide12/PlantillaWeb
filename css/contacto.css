@@ -20,6 +20,14 @@ header {
   margin-bottom: 0.7em;
 }
 
+.separador {
+  padding: 1em;
+  margin: 2.5em 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-bottom: 0.4em solid #2570d4;
+}
+
 .contenedor_formulario {
   margin: 2em 1em;
 }
@@ -37,11 +45,65 @@ header {
   font-size: 2.4em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin: 1em 0;
+}
+
+.tabla_formulario .col1 {
+  display: inline-block;
+  width: 64%;
+  vertical-align: top;
+  margin-right: 3em;
+}
+
+.tabla_formulario .col2 {
+  display: inline-block;
+  width: 26%;
+}
+
+form * {
+  font-family: 'open_sans';
+}
+
+form input {
+  height: 1em;
+  margin-bottom: 1em;
+}
+
+form textarea {
+  height: 10em;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+form textarea, form input {
+  border: none;
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #eeeeee;
+  color: #999999;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+form textarea:focus, form input:focus {
+  background: #f5f5f5;
+  color: #777777;
+}
+
+button.submit {
+  border: none;
+  background: #2570d4;
+  font-size: 1em;
+  border-radius: 5px;
+  color: white;
+  padding: 1.5em 3em;
+  margin-top: 1em;
 }
 
 #gustos {
   padding: 3.75em 0;
-  background-image: url(../imagenes/fondo_conocenos2.jpg);
+  background-image: url(../imagenes/fondo_gustos.jpg);
   background-position: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,21 +148,57 @@ header {
 }
 
 @media screen and (max-width: 749px) {
+  .contenedor_formulario form .col1, .contenedor_formulario form .col2 {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  form textarea, form input {
+    width: 90%;
+    padding: 5%;
+  }
+
   #gustos ul li {
     list-style-type: none;
     display: inline-block;
     width: 40%;
     margin-right: 5%;
-  }
+    font-size: 1.2em;
+  }  
+
 }
 
 @media screen and (max-width: 549px) {
+  .contenedor_formulario {
+    margin: 1em 0;
+  }
+  .contenido_formulario h2{
+    text-align: center;
+  }
+
+  .tabla_formulario {
+    text-align: center;
+  }
+
   #gustos ul li {
     width: 90%;
     margin: 0;
   }
 }
 
-@media screen and (min-width: 720px) {}
+@media screen and (min-width: 720px) {
+  .contenedor_mensaje {
+    background-color: #d81e5b;
+    color: #eeeeee;
+    font-size: 1.1em;
+    padding: 1.5em 20%;
+  }
+}
 
-@media screen and (min-width: 1300px) {}
+@media screen and (min-width: 1250px) {
+  .contenedor_mensaje {
+    font-size: 1.2em;
+    padding: 2em 33.333%;
+  }
+}

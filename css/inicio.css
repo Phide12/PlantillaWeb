@@ -5,6 +5,7 @@ h2 {
 .separador {
   padding: 1em; 
   margin: 2.5em 0;
+  text-align: center;
   background-color: #f1f1f1;
   border-bottom: 0.4em solid #d81e5b;
 }
