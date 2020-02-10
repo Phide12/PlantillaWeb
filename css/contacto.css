@@ -28,7 +28,7 @@
 }
 
 .contenedor_formulario h2 {
-  font-family: 'roboto';
+  font-family: 'roboto', sans-serif;
   color: #363636;
   font-size: 2.4em;
   text-transform: uppercase;
@@ -49,7 +49,7 @@
 }
 
 form * {
-  font-family: 'open_sans';
+  font-family: 'open_sans', sans-serif;
 }
 
 form input {
@@ -97,7 +97,6 @@ button.submit {
   background-repeat: no-repeat;
   overflow: hidden;
   color: #f1f2f2;
-  font-family: sans-serif;
   line-height: 1.4;
 }
 

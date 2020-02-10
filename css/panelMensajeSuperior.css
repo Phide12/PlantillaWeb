@@ -1,5 +1,5 @@
 	.contenedor_panel_rotativo {
-		font-family: 'roboto';
+		font-family: 'roboto', sans-serif;
 	}
 	.contenedor_panel_rotativo div {
 		width: 100%;
