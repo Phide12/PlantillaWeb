@@ -2,13 +2,7 @@ h2 {
   text-align: center;
 }
 
-.separador {
-  padding: 1em; 
-  margin: 2.5em 0;
-  text-align: center;
-  background-color: #f1f1f1;
-  border-bottom: 0.4em solid #d81e5b;
-}
+
 
 a.boton_enlace {
   display: inline-block;
@@ -59,10 +53,7 @@ div.contenido_parrafo_2 img {
 
 @media screen and (max-width: 749px) {
   
-  .separador {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-  }
+  
 
   div.contenedor_parrafo_1 {
     padding: 3em 10%;
@@ -94,12 +85,6 @@ div.contenido_parrafo_2 img {
 }
 
 @media screen and (min-width: 750px) {
-
-  .separador {
-    position: sticky;
-    top: 83px; 
-    z-index: 40;
-  }
   
   div.contenedor_parrafo_1 {
     padding: 2em 12.5%;

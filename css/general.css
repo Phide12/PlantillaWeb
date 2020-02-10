@@ -11,6 +11,14 @@ body {
     overflow-x: hidden;
 }
 
+.separador {
+    padding: 1em; 
+    margin: 2.5em 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 0.4em solid #d81e5b;
+  }
+
 .cargar_imagenes {
     animation-name: cargar_imagenes;
     -webkit-animation-name: cargar_imagenes;
@@ -47,11 +55,17 @@ body {
         display: none;
     }
 
-    aside {
+    .separador {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+      }
+
+    aside#volver_arriba {
       position: fixed;
       right: 1em;
       bottom: 1em;
       color: white;
+      border: solid 2px white;
       background-color: #2570d4;
       border-radius: 7.25%;
     
@@ -69,4 +83,10 @@ body {
     .ocultar_grande {
         display: none;
     }
+
+    .separador {
+        position: sticky;
+        top: 83px; 
+        z-index: 40;
+      }
 }

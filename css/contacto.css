@@ -1,7 +1,3 @@
-header {
-  border-bottom: solid 8px #d81e5b;
-}
-
 #intro {
   padding: 2em 0;
   margin: 0;
@@ -18,14 +14,6 @@ header {
   font-size: 0.5em;
   letter-spacing: 0.1em;
   margin-bottom: 0.7em;
-}
-
-.separador {
-  padding: 1em;
-  margin: 2.5em 0;
-  text-align: center;
-  background-color: #f1f1f1;
-  border-bottom: 0.4em solid #2570d4;
 }
 
 .contenedor_formulario {
