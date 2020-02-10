@@ -188,6 +188,10 @@ button.submit {
 }
 
 @media screen and (min-width: 720px) {
+  .contenedor_formulario {
+    margin: 2.5em 1em;
+  }
+
   .contenedor_mensaje {
     background-color: #d81e5b;
     color: #eeeeee;
@@ -197,6 +201,10 @@ button.submit {
 }
 
 @media screen and (min-width: 1250px) {
+  .contenedor_formulario {
+    margin: 5em 1em;
+  }
+
   .contenedor_mensaje {
     font-size: 1.2em;
     padding: 2em 33.333%;

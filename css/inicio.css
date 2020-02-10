@@ -3,9 +3,11 @@ body {
   overflow-y: hidden;
 }
 
+header .boton_header:hover {
+  background-color: unset;
+}
+
 .contenedor_general {
-  position: fixed;
-  top: 25%;
   width: 100%;
   text-align: center;
 }
@@ -25,11 +27,106 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, #d81e5b, #2570d4);
+  background: linear-gradient(45deg, #d81e5b, #2570d4);
   background-size: 200% 200%;
   animation: 10s ease-in-out infinite;
   animation-name: anim_fondo;
   -webkit-animation-name: anim_fondo;
+}
+
+
+@media screen and (max-width: 749px) {
+
+  .contenedor_panel_rotativo div {
+		width: 100%;
+		height: 260px;
+	}
+
+  span#espacio_titulo_inferior, span#espacio_titulo_superior {
+    color: white;
+    font-weight: normal;
+  }
+
+  
+  header {
+    border-color: white;
+  }
+
+  .contenedor_secciones a {
+    margin: 1em 0;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .contenedor_secciones a {
+    margin: 1em 0;
+    width: 80%;
+  }
+
+  span#espacio_titulo_inferior {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+
+  .contenedor_panel_rotativo #espacio_titulo_inferior {
+    animation: 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    animation-name: color_letra;
+    -webkit-animation-name: color_letra;
+  }
+
+  .contenedor_general {
+    position: fixed;
+    top: 25%;
+  } 
+
+  .seccion_actual {
+    animation: 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    animation-name: color_fondo;
+    -webkit-animation-name: color_fondo;
+  }
+
+  header *:not(.seccion_actual) {
+    animation: 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    animation-name: color_letra_invertido;
+    -webkit-animation-name: color_letra_invertido;
+  }
+
+  @keyframes color_letra_invertido {
+    0% {
+      color: #d81e5b;
+    }
+    100% {
+      color: #2570d4;
+    }
+  }
+
+  @keyframes color_letra {
+    0% {
+      color: #2570d4;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: #d81e5b;
+    }
+  }
+
+  @keyframes color_fondo {
+    0% {
+      background-color: #2570d4;
+    }
+    100% {
+      background-color: #d81e5b;
+    }
+  }
+
 }
 
 @keyframes anim_fondo {
@@ -41,63 +138,5 @@ body {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-.seccion_actual {
-  animation: 5s ease-in-out infinite;
-  animation-direction: alternate-reverse;
-  animation-name: color_fondo;
-  -webkit-animation-name: color_fondo;
-}
-
-.contenedor_panel_rotativo #espacio_titulo_inferior {
-  animation: 5s ease-in-out infinite;
-  animation-direction: alternate-reverse;
-  animation-name: color_letra;
-  -webkit-animation-name: color_letra;
-}
-
-.contenedor_panel_rotativo {
-  animation: 5s ease-in-out infinite;
-  animation-direction: alternate-reverse;
-  animation-name: color_sombra;
-  -webkit-animation-name: color_sombra;
-}
-
-@keyframes color_fondo {
-  0% {
-    background-color: #2570d4;
-  }
-  50% {
-    background-color: #ffe8b7;
-    color: #333333;
-  }
-  100% {
-    background-color: #d81e5b;
-  }
-}
-
-@keyframes color_letra {
-  0% {
-    color: #2570d4;
-  }
-  50% {
-    color: #ffe8b7;
-  }
-  100% {
-    color: #d81e5b;
-  }
-}
-
-@keyframes color_sombra {
-  0% {
-    text-shadow: -10px -5px 5px #d81e5b;
-    box-shadow: inset -10px -5px 5px #d81e5b, -10px -5px 5px #d81e5b;
-  }
-  100% {
-    
-    text-shadow: 10px 10px 5px #2570d4;
-    box-shadow: inset 10px 10px 5px #2570d4, 10px 10px 5px #2570d4;
   }
 }

@@ -4,7 +4,10 @@
 function cargarGeneral() {
   setInterval(animarTituloIntermitente, 750);
   addListener(document.getElementById('icono_menu'), 'click', desplegarMenu);
-  addListener(document.getElementById('volver_arriba'), 'click', volverArriba);
+  let botonVolverArriba = document.getElementById('volver_arriba');
+  if (botonVolverArriba != null) {
+    addListener(botonVolverArriba, 'click', volverArriba);
+  }
   addListener(window, 'resize', redimensionar);
 }
 

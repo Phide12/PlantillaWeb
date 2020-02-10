@@ -15,7 +15,10 @@ function cargarMensajePanelSuperior() {
     contadorLetrasSuperior = 0;
     contadorLetrasInferior = 0;
     contadorPalabras = 0;
-    setInterval(escribirSiguienteLetra, 175);
+
+    document.getElementById('espacio_titulo_superior').innerHTML = '';
+    document.getElementById('espacio_titulo_inferior').innerHTML = '';
+    setInterval(escribirSiguienteLetra, 275);
   }
 }
 
